@@ -73,13 +73,13 @@ export default function Step3() {
                                     title: `Exchange type`,
                                     text: `Float`
                                 }, {
-                                    title: `Order status`,
-                                    text: `Awaiting deposit`
-                                }, {
                                     title: `Creation date`,
                                     text: `15.11.2022 06:58:32`
                                }, {
-                                    title: `Creation date`,
+                                    title: `You sent to Quickex`,
+                                    text: `15.11.2022 06:58:32`
+                                }, {
+                                    title: `Order completed`,
                                     text: `15.11.2022 06:58:32`
                                 }].map((item, index) => <div key={index} className="xl:border-b xl:border-white xl:border-opacity-5 py-1 xl:py-3">
                                     <div className="text-neutral-400 text-[13px] leading-tight mb-0.5">{item.title}</div>
