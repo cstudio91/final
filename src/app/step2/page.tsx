@@ -24,6 +24,7 @@ import RedInfo from '@/Icons/RedInfo';
 import Notification from '@/Components/Notification';
 import { useState } from 'react';
 import Image from 'next/image';
+import Rupor from "@/images/rupor.png";
 
 export default function Step2() {
 
@@ -229,7 +230,8 @@ export default function Step2() {
                     </div>
                     <Notification />
                 </div>
-                <div className="bg-neutral-700 p-5 xl:hidden order-5 -mx-4 mb-5">
+                <div className="bg-neutral-700 p-5 xl:hidden order-5 -mx-6 mb-5 relative" >
+                    <Image width={97} height={113} alt="" src={Rupor.src} className="absolute -top-12 right-6 pointer-events-none w-[84px] h-auto transform scale-x-[-1]" />
                     <div className="text-[20px] mb-3">Email notifications</div>
                     <div className="flex gap-2.5 mb-3">
                         <input className="grow p-2.5 bg-neutral-500 rounded-md border border-black border-opacity-10" value={data.email} onChange={e => setData(prev => ({
