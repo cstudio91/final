@@ -64,6 +64,9 @@ export default {
         },
         violet: {
           100: "#EDEBF6"
+        },
+        gray: {
+          100: "#6e6e6e"
         }
       }
     },
