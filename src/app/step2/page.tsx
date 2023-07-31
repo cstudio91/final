@@ -234,7 +234,7 @@ export default function Step2() {
                     <Image width={97} height={113} alt="" src={Rupor.src} className="absolute -top-12 right-6 pointer-events-none w-[84px] h-auto transform scale-x-[-1]" />
                     <div className="text-[20px] mb-3">Email notifications</div>
                     <div className="flex gap-2.5 mb-3">
-                        <input className="grow p-2.5 bg-neutral-500 rounded-md border border-black border-opacity-10" value={data.email} onChange={e => setData(prev => ({
+                        <input className="grow p-2.5 bg-gray-100 rounded-md border border-black border-opacity-10" value={data.email} onChange={e => setData(prev => ({
                             ...prev,
                             email: e.target.value
                         }))} />
