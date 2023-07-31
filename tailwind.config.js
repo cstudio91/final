@@ -67,6 +67,9 @@ export default {
         },
         gray: {
           100: "#6e6e6e"
+        },
+        wgray: {
+          100: "#f3f3f3"
         }
       }
     },
