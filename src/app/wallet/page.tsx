@@ -31,7 +31,7 @@ export default function Wallet() {
                                 <span className=""> for you. </span>
                             </div>
                             <div className="text-stone-300 text-lg xl:text-xl mb-8 pr-16">Let’s stay in touch: we notify you when Wallet will be released</div>
-                            <input placeholder="mail@example.com" className="placeholder:text-zinc-100 w-full xl:w-auto text-white xl:min-w-[20rem] bg-neutral-500 rounded-md border border-black border-opacity-10 py-3 px-4 mb-4" />
+                            <input placeholder="mail@example.com" className="placeholder:text-zinc-100 w-full xl:w-auto text-white xl:min-w-[20rem] bg-gray-100 rounded-md border border-black border-opacity-10 py-3 px-4 mb-4" />
                             <PrimaryButton className="w-full xl:w-auto xl:min-w-[20rem]" disabled={false}>Send</PrimaryButton>
                         </div>
                     </div>
