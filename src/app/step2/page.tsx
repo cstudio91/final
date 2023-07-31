@@ -189,10 +189,7 @@ export default function Step2() {
                         <PrimaryButton disabled={false}>Continue exchange</PrimaryButton>
                     </div>}
                     { radio == 1 && <div className="flex gap-2.5 mb-3 sm:flex-col lg:flex-row">
-                        <input className="grow p-2.5 bg-gray-100 rounded-md border border-black border-opacity-10" value={data.email} onChange={e => setData(prev => ({
-                            ...prev,
-                            email: e.target.value
-                        }))} />
+                        <input className="lg:min-w-[50%] p-2.5 bg-gray-100 rounded-md border border-black border-opacity-10 placeholder-gray-300" placeholder="Enter your Etherium address"  />
                         <PrimaryButton disabled={false}>Proceed refund</PrimaryButton>
                     </div>}
                 </div>
