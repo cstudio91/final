@@ -22,7 +22,7 @@ import Time from '@/Icons/Time';
 import PrimaryButton from '@/Components/PrimaryButton';
 import RedInfo from '@/Icons/RedInfo';
 import Notification from '@/Components/Notification';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Rupor from "@/images/rupor.png";
 
@@ -34,6 +34,8 @@ export default function Step2() {
     const [data, setData] = useState({
         email: `andrew@gmail.com`
     })
+
+    const [radio, setRadio] = useState(0);
 
     return (
         <Layout>
@@ -163,7 +165,7 @@ export default function Step2() {
                     </div>
                     <div className="mb-2">
                         <label htmlFor="option2" className="flex items-center relative">
-                            <input type="radio" name="option" id="option2" className="hidden peer" />
+                            <input type="radio" name="option" id="option2" className="hidden peer" value={radio} onChange={() => setRadio(0)} />
                             <div className="w-3 h-3 bg-stone-300 rounded-full hidden peer-checked:flex absolute left-[5px]" />
                             <div className="w-[22px] h-[22px] bg-neutral-500 rounded-full mr-3 shrink-0" />
                             <div>
@@ -174,7 +176,7 @@ export default function Step2() {
                     </div>
                     <div className="mb-6">
                         <label htmlFor="option1" className="flex items-center relative">
-                            <input type="radio" name="option" id="option1" className="hidden peer" />
+                            <input type="radio" name="option" id="option1" className="hidden peer" value={radio} onChange={() => setRadio(1)}/>
                             <div className="w-3 h-3 bg-stone-300 rounded-full hidden peer-checked:flex absolute left-[5px]" />
                             <div className="w-[22px] h-[22px] bg-neutral-500 rounded-full mr-3 shrink-0" />
                             <div>
@@ -183,13 +185,16 @@ export default function Step2() {
                             </div>
                         </label>
                     </div>
-                    <div className="flex gap-2.5 mb-3">
+                    { radio == 0 && <div className="flex gap-2.5 mb-3">
+                        <PrimaryButton disabled={false}>Continue exchange</PrimaryButton>
+                    </div>}
+                    { radio == 1 && <div className="flex gap-2.5 mb-3 sm:flex-col lg:flex-row">
                         <input className="grow p-2.5 bg-gray-100 rounded-md border border-black border-opacity-10" value={data.email} onChange={e => setData(prev => ({
                             ...prev,
                             email: e.target.value
                         }))} />
                         <PrimaryButton disabled={false}>Proceed refund</PrimaryButton>
-                    </div>
+                    </div>}
                 </div>
 
 
