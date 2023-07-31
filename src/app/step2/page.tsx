@@ -183,7 +183,13 @@ export default function Step2() {
                             </div>
                         </label>
                     </div>
-                    <PrimaryButton disabled={false}>Continue exchange</PrimaryButton>
+                    <div className="flex gap-2.5 mb-3">
+                        <input className="grow p-2.5 bg-gray-100 rounded-md border border-black border-opacity-10" value={data.email} onChange={e => setData(prev => ({
+                            ...prev,
+                            email: e.target.value
+                        }))} />
+                        <PrimaryButton disabled={false}>Proceed refund</PrimaryButton>
+                    </div>
                 </div>
 
 
