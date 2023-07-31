@@ -20,15 +20,15 @@ export default function Feedback() {
             </div>
             <div className="flex flex-col gap-2 mb-4">
                 <label className="text-neutral-400">Your name</label>
-                <input className="px-6 py-4 bg-zinc-100 rounded-[11px] text-zinc-600 text-lg" defaultValue="John Doe" />
+                <input className="px-6 py-4 bg-wgray-100 rounded-[11px] text-zinc-600 text-lg" defaultValue="John Doe" />
             </div>
             <div className="flex flex-col gap-2 mb-4">
                 <label className="text-neutral-400">Your name</label>
-                <input className="px-6 py-4 bg-zinc-100 rounded-[11px] text-zinc-600 text-lg" defaultValue="John Doe" />
+                <input className="px-6 py-4 bg-wgray-100 rounded-[11px] text-zinc-600 text-lg" defaultValue="John Doe" />
             </div>
             <div className="flex flex-col gap-2 mb-4">
                 <label className="text-neutral-400">Your name</label>
-                <textarea className="px-6 py-4 bg-zinc-100 rounded-[11px] text-zinc-600 text-lg" defaultValue="Your service is very good. I love that fast transactions. Thanks to all team! " />
+                <textarea className="px-6 py-4 bg-wgray-100 rounded-[11px] text-zinc-600 text-lg" defaultValue="Your service is very good. I love that fast transactions. Thanks to all team! " />
             </div>
             <PrimaryButton disabled={false} className="w-full mt-6">Submit</PrimaryButton>
         </div>
